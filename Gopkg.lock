@@ -668,6 +668,14 @@
   version = "v1.0.0"
 
 [[projects]]
+  digest = "1:a893448e8973a16509adfff081c085b1ab9143d88710b6d89548b4b10be7ce13"
+  name = "github.com/xanzy/go-gitlab"
+  packages = ["."]
+  pruneopts = "NT"
+  revision = "8e525d783950ddfc35d109e48af26f4cb70dde4a"
+  version = "v0.15.0"
+
+[[projects]]
   digest = "1:3148cb3478c26a92b4c1a18abb9428234b281e278af6267840721a24b6cbc6a3"
   name = "github.com/xanzy/ssh-agent"
   packages = ["."]
@@ -1377,6 +1385,7 @@
     "github.com/spf13/pflag",
     "github.com/stretchr/testify/assert",
     "github.com/stretchr/testify/require",
+    "github.com/xanzy/go-gitlab",
     "golang.org/x/crypto/ssh",
     "golang.org/x/oauth2",
     "gopkg.in/h2non/gock.v1",

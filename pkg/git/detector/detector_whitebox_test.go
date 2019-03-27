@@ -141,7 +141,7 @@ func XTestGitLabDetectorWithToken(t *testing.T) {
 
 	glSource := test.NewGitSource(test.WithURL("https://gitlab.com/gitlab-org/gitlab-qa"))
 
-	buildEnvStats, err := DetectBuildEnvironments(glSource, git.NewOauthToken([]byte("")))
+	buildEnvStats, err := DetectBuildEnvironments(glSource, git.NewUsernamePassword("anonymous", ""))
 	require.NoError(t, err)
 	printBuildEnvStats(buildEnvStats)
 }
